@@ -25,6 +25,10 @@ class RemindersFragment : Fragment() {
     private lateinit var reminderAdapter: ReminderAdapter
     private lateinit var viewManager: RecyclerView.LayoutManager
 
+
+    //populate some test data in Reminders list
+    private var reminders: ArrayList<Reminder> = arrayListOf()
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
